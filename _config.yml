@@ -1,0 +1,122 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: '#ML4Sci' # displayed over the sidebar
+tagline: Machine Learning in the Sciences # Shown as a title on the page
+# description: Winter 2022-23 with Prof. Dr. Mathias Niepert
+# author: Marimuthu Kalimuthu
+baseurl: '/ml4sci-ws22-23' # the subpath of your site, e.g. /blog
+url: 'https://uni-stuttgart-mls.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+# Custom variables
+www: 'https://uni-stuttgart-mls.github.io/ml4sci-ws22-23' # to enable using {{ site.www }}, instead of {{ site.url }}{{ site.baseurl }}
+
+
+
+# Back to top link
+#back_to_top: true
+#back_to_top_text: "Back to top"
+
+# Footer last edited timestamp
+# https://pmarsceill.github.io/just-the-docs/docs/configuration/#footer-content
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+# the “page last modified” data will only display if a page has a key called last_modified_date, formatted in some readable date format
+
+
+# Google Analytics Tracking (optional)
+#ga_tracking: UA-5555555-55
+#ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
+
+# Theme settings
+# remote_theme: pmarsceill/just-the-docs@v0.3.3
+theme: just-the-docs
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+aux_links:
+  "Main Seminar Page":
+    - 'https://uni-stuttgart-mls.github.io/machine-learning-4-science-seminar'
+aux_links_new_tab: true
+
+footer_content: 'MLS lab, University of Stuttgart &copy; 2023' # <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+
+# Collections for website data
+collections:
+  staffers:
+  modules:
+  schedules:
+  announcements:
+  # Define a collection named "resource", its documents reside in the "_resource" directory
+  resource:
+#permalink: "/:collection/:path/"
+    permalink: "/:path/"
+    output: true
+# Default layouts for each collection type
+defaults:
+  - scope:
+      path: ''
+      type: staffers
+    values:
+      layout: staffer
+      subpath: '/assets/images/'
+  - scope:
+      path: ''
+      type: modules
+    values:
+      layout: module
+  - scope:
+      path: ''
+      type: schedules
+    values:
+      layout: schedule
+  - scope:
+      path: ''
+      type: announcements
+    values:
+      layout: announcement
+  - scope:
+      path: ''
+      type: resource
+    values:
+      layout: minimal
+
+###just_the_docs:
+### # Define which collections are used in just-the-docs
+### collections:
+###   # Reference the "resource" collection
+###   resource:
+###     # Give the collection a name
+###     name: Resource
+####     # Exclude the collection from the navigation
+####     # Supports true or false (default)
+###     nav_exclude: false
+####     # Exclude the collection from the search
+####     # Supports true or false (default)
+###     search_exclude: false
+
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+plugins:
+  - jekyll-seo-tag

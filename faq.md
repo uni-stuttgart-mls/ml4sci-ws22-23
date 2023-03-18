@@ -28,7 +28,7 @@ Below are a few Q&As that can help you clarify the questions you might have. If 
 
 ### How should I get a grade?
 
-You should be able to register for the seminar on CAMPUS. If this is not possible, we will be able to offer a Schein, on successful completion of the seminar.
+You should be able to register for the seminar on the [<u>Uni Stuttgart CAMPUS system</u>](https://campus.uni-stuttgart.de). If this is not possible, we will be able to offer a Schein, on successful completion of the seminar.
 
 
 ### Is attendance mandatory? Can I join via Zoom?

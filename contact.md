@@ -14,4 +14,6 @@ permalink: contact
 
 Machine Learning for Simulation Science Lab,  
 Universitätsstraße 32  
-70569 Stuttgart
+70569 Stuttgart, Germany  
+
+Web: [<u>Machine Learning for Simulation Science</u>](https://www.ipvs.uni-stuttgart.de/departments/mls/)
